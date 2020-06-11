@@ -33,17 +33,17 @@ namespace CsvTest
 
             foreach (string line in lines)
             {
-                string[] words = line.Split(',');
+                string[] column = line.Split(',');
 
                 //could use AutoMapper to do this mapping automically
                 addresses.Add(new NameAddress
                 {
                     Address = new Address
                     {
-                        Line1 = words[1],
-                        Line2 = words[2]
+                        Line1 = column[1],
+                        Line2 = column[2]
                     },
-                    Name = words[0]
+                    Name = column[0]
                 });
             }
 
