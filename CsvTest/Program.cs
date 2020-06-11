@@ -24,6 +24,8 @@ namespace CsvTest
 
             string filePath = Console.ReadLine();
 
+            //could check it's a csv
+
             List<string> lines = System.IO.File.ReadAllLines(filePath).ToList();
 
             //could check lines[0] has the correct column names and return error to show the CSV is incorrect
