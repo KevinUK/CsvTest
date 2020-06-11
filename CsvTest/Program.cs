@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 
 namespace CsvTest
@@ -26,7 +27,7 @@ namespace CsvTest
 
             //could check it's a csv
 
-            List<string> lines = System.IO.File.ReadAllLines(filePath).ToList();
+            List<string> lines = File.ReadAllLines(filePath).ToList();
 
             //could check lines[0] has the correct column names and return error to show the CSV is incorrect
 
